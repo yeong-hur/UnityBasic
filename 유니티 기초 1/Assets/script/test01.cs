@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class test01 : MonoBehaviour
 {
     List<string> Character = new List<string>();
@@ -19,8 +20,10 @@ public class test01 : MonoBehaviour
         Character.Add("옥점례");
         Character.Add("계윤수");
         Character.Add("퇴근이");
+    }
 
-        // 10연차 뽑기
+    public void DrawCharacters()
+    {
         Debug.Log("==== 10연차 뽑기 결과 ====");
 
         for (int i = 1; i <= 10; i++)
